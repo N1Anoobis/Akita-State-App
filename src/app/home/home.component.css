@@ -1,0 +1,10 @@
+mat-card {
+    width: 30%;
+    margin: 2em;
+    background-color: orange;
+    text-align: center;
+}
+
+.add-todo-button {
+    margin: 1em;
+}
