@@ -11,13 +11,12 @@ export class ApiService {
     private readonly baseUrl = environment.baseUrl
     constructor(private http: HttpClient) { }
 
-    addTask(title: string, desc: string): Observable<Todo> {
+    addTodo(title: string, desc: string): Observable<Todo> {
         return this.http.post<Todo>(this.baseUrl, { title, desc })
     }
 
     getTodos(): Observable<Todo[]> {
-        return this.http.get<{ data: Todo[] }>(this.baseUrl).pipe(map((res) => res.data)
-        )
+        return this.http.get<Todo[]>(this.baseUrl).pipe(map((res) => res))
     }
 
     deleteTodo(id: string): Observable<Todo> {
