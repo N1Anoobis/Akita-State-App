@@ -11,6 +11,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatInputModule } from '@angular/material/input';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -33,7 +34,7 @@ const routes: Routes = [
     MatButtonModule,
     MatCardModule,
     MatProgressSpinnerModule,
-    MatInputModule
+    MatInputModule,ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

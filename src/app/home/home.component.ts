@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
   }
 
   addTodo() {
-this.router.navigateByUrl('/addTodo')
+    this.router.navigateByUrl('/addTodo')
   }
-  
+
 }

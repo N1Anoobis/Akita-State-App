@@ -3,6 +3,7 @@ mat-card {
     margin: 2em;
     background-color: orange;
     text-align: center;
+    min-width: 400px;
 }
 
 .add-todo-button {
